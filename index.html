@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            position:relative;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+            background-color: rgb(42, 130, 165);
+            color: rgb(24, 18, 30);
+        }
+        h1
+        h2{
+            margin: 20px;
+        }
+        main{
+            padding: 60px 0;
+        }
+        li{
+            display: inline;
+            padding: 0px 20px;
+            text-decoration: double;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+            text-align: right;
+            align-items: center;
+        }
+        header,
+        footer{
+            height: 60px;
+            width: 100%;
+            line-height: 60px;
+            background-color: rgb(8, 1, 15);
+        }
+        header{
+            position: fixed;
+            border-bottom: 10px solid #ddd;
+        }
+    
+        
+        
+        figure{
+            margin-bottom: 40px;
+        }
+        img{
+            display:grid;
+            margin: 5px auto;
+            image-resolution:inherit ;
+        }
+        section{
+            margin-bottom: 40px;
+            padding: 20px 10px 40px 10px;
+        }
+        section{
+            margin-bottom: 0;
+            padding: 20px 10px 40px 10px;
+            border-top: 3px solid #ddafb5;
+            background-color:darkcyan;
+        }
+        form{
+            margin: 0;
+            width: 500px;
+            padding: 10px;
+            border: 5px solid #ddafb5;
+            border-radius: 20px;
+        }
+        label{
+            display: inline-block;
+            width: 100px;
+        }
+        input,
+        textarea{
+            box-sizing: border-box;
+            width: 300px;
+            border: 1px solid #ddd;
+        }
+        textarea{
+            vertical-align: top;
+            height: 60px;
+        }
+        button{
+            height: 40PX;
+            width: 120px;
+            background-color: #ff6a00;
+            color: rgb(240, 18, 29);
+        }
+        .text-center{
+            text-align:center ;
+        }
+        .text-right{
+            text-align: left;
+        }
+    </style>
+    <header>
+        <nav class="text-right">
+            <ul>
+                <li> <a href="https://github.com">github</a></li>
+                <li> <a href="coming soon">Coming Soon</a></li>
+                <li> <a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="text-right">My Portfolio</h1>
+        <figure>
+            <IMG src="./IMG_E0160.JPG" alt="pic of mine" height="300px" width="20%">
+            <figcaption class="text-center">Jaskaran kaur</figcaption>
+        </figure>
+        <aside>
+            <p>My Name is JASKARAN KAUR .I am learning full stack developer in UC Davis bootcamp soon i will be come as a web developer </p>
+        </aside>
+        <section id="contact">
+            <h2 class="text-center">Contact Me</h2>
+            <form>
+                <ul>
+                    <li>
+                        <label class="text-right" for="name">Name:</label>
+                        <input type="text" id="name" name="user-name">
+                    </li>
+                    <li>
+                         <label class="text-right" for="email">Email:</label>
+                         <input type="text" id="email" name="user-email">
+                    </li>     
+                </ul>
+                <div class="text-center">
+                    <button type="submit">SEND</button>
+                </div>
+             </form>
+        </section>
+        
+    </main>
+    <footer class="text-center">
+        2022 jaskaran website production 
+    </footer>
+    
+</body>
+</html>
